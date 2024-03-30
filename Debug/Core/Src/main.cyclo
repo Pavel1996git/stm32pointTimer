@@ -1,0 +1,7 @@
+../Core/Src/main.c:62:8:timerSetflag	1
+../Core/Src/main.c:66:8:multiblink	2
+../Core/Src/main.c:81:5:main	4
+../Core/Src/main.c:146:6:SystemClock_Config	3
+../Core/Src/main.c:183:13:MX_TIM2_Init	4
+../Core/Src/main.c:228:13:MX_GPIO_Init	1
+../Core/Src/main.c:262:6:Error_Handler	1
