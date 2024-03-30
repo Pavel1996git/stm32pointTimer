@@ -9,6 +9,7 @@
   * Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.
   *
+  *
   * This software is licensed under terms that can be found in the LICENSE file
   * in the root directory of this software component.
   * If no LICENSE file comes with this software, it is provided AS-IS.
@@ -113,9 +114,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-	  HAL_Delay(3000);
-	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+
 for(int i =0; i<4; i++)
 {
 	  timerDelay(P_TIM, 1000); // Delay for 1000 milliseconds
