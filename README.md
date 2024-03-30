@@ -50,7 +50,13 @@ The library is distributed under the MIT license. Detailed information about the
 If you have any questions or need assistance, feel free to contact the developer via email at arruin1996@gmail.com. We are ready to help you with the use and configuration of this library.
 
 
-***
+
+
+---
+
+
+
+
 #Библиотека timerDelay для STM32F1
 
 Библиотека `timerDelay` предоставляет функции для задержки выполнения программы с использованием аппаратного таймера на микроконтроллерах STM32F1.
