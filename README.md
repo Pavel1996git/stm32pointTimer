@@ -1,12 +1,13 @@
 # Library timerDelay for STM32F1
+## English
 
 The `timerDelay` library provides functions for delaying program execution using hardware timers on STM32F1 microcontrollers.
 
-## Purpose of the Library
+### Purpose of the Library
 
 The `timerDelay` library is intended for implementing program delays using hardware timers on STM32F1 microcontrollers. It enables both blocking and non-blocking program execution delays.
 
-## Installation and Usage
+### Installation and Usage
 
 1. Copy the library files from the `ThisLibrary` folder to your project.
 2. Include the `timerDelay.h` file in your project.
@@ -18,7 +19,7 @@ The `timerDelay` library is intended for implementing program delays using hardw
     volatile uint8_t flagMultiblink = 0;
     ```
 
-## Usage Examples
+### Usage Examples
 
 You can find an example of using the library in the `main.c` file. For non-blocking delay, in addition to specifying the delay time, you need to pass a pointer to the callback function. This function will be called in the timer interrupt handler upon completion of the delay.
 
@@ -33,33 +34,33 @@ void myCallbackFunction(void) {
 // Example of using the non-blocking delay function
 asyncTimerDelay(&htim2, 1000, myCallbackFunction);
 ```
-## Dependencies and Requirements
+### Dependencies and Requirements
 
 The library has been tested using the `stm32f1xx_hal.h` file. Other versions have not been tested. Make sure that your project correctly includes the necessary dependencies before using this library.
 
-## API Documentation
+### API Documentation
 
 Documentation for the API functions is provided in the `timerDelay.h` file. Refer to this file for detailed information about available functions and their parameters.
 
-## Licensing
+### Licensing
 
 The library is distributed under the MIT license. Detailed information about the license can be found in the `LICENSE` file.
 
-## Help and Feedback
+### Help and Feedback
 
 If you have any questions or need assistance, feel free to contact the developer via email at arruin1996@gmail.com. We are ready to help you with the use and configuration of this library.
 
----
 
-#Библиотека timerDelay для STM32F1
+
+## Russian
 
 Библиотека `timerDelay` предоставляет функции для задержки выполнения программы с использованием аппаратного таймера на микроконтроллерах STM32F1.
 
-## Назначение библиотеки
+### Назначение библиотеки
 
 Библиотека `timerDelay` предназначена для реализации задержек выполнения программы с использованием аппаратного таймера на микроконтроллерах STM32F1. Она обеспечивает возможность блокирующей и неблокирующей задержки выполнения программы.
 
-## Установка и использование
+### Установка и использование
 
 1. Скопируйте файлы библиотеки из папки `ThisLibrary` в ваш проект.
 2. Подключите файл `timerDelay.h` в вашем проекте.
@@ -71,7 +72,7 @@ If you have any questions or need assistance, feel free to contact the developer
     volatile uint8_t flagMultiblink = 0;
     ```
 
-## Примеры использования
+### Примеры использования
 
 Пример использования библиотеки можно найти в файле `main.c`. Для неблокирующей задержки, кроме указания времени задержки, необходимо передать указатель на функцию обратного вызова. Эта функция будет вызвана в обработчике прерывания таймера по завершении задержки. 
 
@@ -86,18 +87,18 @@ void myCallbackFunction(void) {
 // Пример использования функции неблокирующей задержки
 asyncTimerDelay(&htim2, 1000, myCallbackFunction);
 ```
-## Зависимости и требования
+### Зависимости и требования
 
 Библиотека была протестирована с использованием файла `stm32f1xx_hal.h`. Другие версии не проверялись. Убедитесь, что ваш проект корректно подключает необходимые зависимости перед использованием этой библиотеки.
 
-## Документация API
+### Документация API
 
 Документация по функциям API предоставлена в файле `timerDelay.h`. Обратитесь к этому файлу для получения подробной информации о доступных функциях и их параметрах.
 
-## Лицензирование
+### Лицензирование
 
 Библиотека распространяется под лицензией MIT. Подробную информацию о лицензии вы можете найти в файле `LICENSE`.
 
-## Помощь и обратная связь
+### Помощь и обратная связь
 
 Если у вас возникли вопросы или вам требуется помощь, не стесняйтесь обращаться к разработчику по адресу электронной почты: arruin1996@gmail.com. Мы готовы помочь вам в использовании и настройке этой библиотеки.
